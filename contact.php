@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="../hw15/assets/css/bootstrap.css" rel="stylesheet"/>
-<link href="../hw15/assets/css/bootstrap-theme.css" rel="stylesheet"/>
+<link href="../assets/css/bootstrap.css" rel="stylesheet"/>
+<link href="../assets/css/bootstrap-theme.css" rel="stylesheet"/>
 <title>Homework 15</title>
 </head>
 <body>
@@ -11,12 +11,12 @@
   <h1>Contact</h1>
 </div>
 	<ul class="nav nav-pills nav-justified">
-		<li role="presentation"><a href="../hw15/index.html">Home</a></li>
-		<li role="presentation"><a href="../hw15/school.html">School</a></li>
-		<li role="presentation"><a href="../hw15/work.html">Work</a></li>
-		<li role="presentation"><a href="../hw15/hobbies.html">Hobbies</a></li>
-		<li role="presentation"><a href="../hw15/other.html">Other</a></li>
-		<li role="presentation" class="active"><a href="../hw15/contact.php">Contact</a></li>
+		<li role="presentation"><a href="../index.html">Home</a></li>
+		<li role="presentation"><a href="../school.html">School</a></li>
+		<li role="presentation"><a href="../work.html">Work</a></li>
+		<li role="presentation"><a href="../hobbies.html">Hobbies</a></li>
+		<li role="presentation"><a href="../other.html">Other</a></li>
+		<li role="presentation" class="active"><a href="../contact.php">Contact</a></li>
 	</ul>
 	<table width="100%">
 	<tr rowspan="3" bgcolor="#000000" border="2" align="center">
@@ -81,7 +81,7 @@
 				$dblink->query($sql) or
 					die("<p>Something went wrong with: $sql<br>".$dblink->error);
 				echo "<h3>Data entered into the database successfully!</h3>";
-				echo '<a href="../hw15/results.php">Link to results</a>';
+				echo '<a href="../results.php">Link to results</a>';
 			}
 			
 		?>

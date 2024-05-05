@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="../hw15/assets/css/bootstrap.css" rel="stylesheet"/>
-<link href="../hw15/assets/css/bootstrap-theme.css" rel="stylesheet"/>
+<link href="../assets/css/bootstrap.css" rel="stylesheet"/>
+<link href="../assets/css/bootstrap-theme.css" rel="stylesheet"/>
 <script src="assets/js/jquery-3.5.1.js"></script>
 <title>Homework 15</title>
 </head>
@@ -12,12 +12,12 @@
   <h1>Contact</h1>
 </div>
 	<ul class="nav nav-pills nav-justified">
-		<li role="presentation"><a href="../hw15/index.html">Home</a></li>
-		<li role="presentation"><a href="../hw15/school.html">School</a></li>
-		<li role="presentation"><a href="../hw15/work.html">Work</a></li>
-		<li role="presentation"><a href="../hw15/hobbies.html">Hobbies</a></li>
-		<li role="presentation"><a href="../hw15/other.html">Other</a></li>
-		<li role="presentation" class="active"><a href="../hw15/contact.php">Contact</a></li>
+		<li role="presentation"><a href="../index.html">Home</a></li>
+		<li role="presentation"><a href="../school.html">School</a></li>
+		<li role="presentation"><a href="../work.html">Work</a></li>
+		<li role="presentation"><a href="../hobbies.html">Hobbies</a></li>
+		<li role="presentation"><a href="../other.html">Other</a></li>
+		<li role="presentation" class="active"><a href="../contact.php">Contact</a></li>
 	</ul>
 	<table width="100%">
 	<tr rowspan="3" bgcolor="#000000" border="2" align="center">
@@ -56,7 +56,7 @@
 function refresh_div() {
 	$.ajax({
 		type: 'post',
-		url: 'https://ec2-18-222-188-153.us-east-2.compute.amazonaws.com/hw15/query.php',
+		url: 'https://ec2-18-222-188-153.us-east-2.compute.amazonaws.com/query.php',
 		success: function(data) {
 			$('#results').html(data);
 		}
